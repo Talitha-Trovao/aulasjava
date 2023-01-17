@@ -10,28 +10,27 @@ body{
 .portfolio { 
     width:500px; 
     height:300px; 
-    /* background:#CCC;    */
     float:left;
-    /* margin-bottom:20px;   */
     position:relative; 
     overflow:hidden;
 
 }
 
-.portfolio img { width:70%; 
-    height:70%; 
+.portfolio img { 
+    width:60%; 
+    height:60%; 
     border-radius:10px; 
     border-left: 5px;
     border-right: 5px;
-    position:relative;
+    position:absolute;
     box-shadow:  2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-    overflow: auto;}
+    overflow: auto;
+}
 
 .portfolio .portfolio_hover { 
-
     z-index:2; 
-    width:70%; 
-    height:70%; 
+    width:60%; 
+    height:60%; 
     position:absolute; 
     top:-100%; 
     left:0; 
@@ -50,7 +49,6 @@ body{
 .portfolio img          { top:0; left:0; z-index:1;}
 
 .title { 
-
     font-family: Helvetica, sans-serif; 
     position:absolute; 
     top:35%; 
@@ -65,7 +63,6 @@ body{
 
 
 .title,.link, .portfolio_hover{
-
     transition:all 500ms; 
     -moz-transition:all 500ms; 
     -ms-transition:all 500ms; 
@@ -74,11 +71,7 @@ body{
 
 }
 
-/*RESPONSIVO*/
-/*768PX BREAKPOINT*/
-
 @media (min-width:48em){
-
     .portfolio {  width:30%; margin-right:2%; }
     .portfolio:nth-of-type(3n+0) {  margin-right:0; }
 }
