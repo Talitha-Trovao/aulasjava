@@ -3,10 +3,8 @@
     padding: 0;
 } 
 
-
 body{
     background-color:azure;
-
 } 
 
 .portfolio { 
@@ -83,6 +81,4 @@ body{
 
     .portfolio {  width:30%; margin-right:2%; }
     .portfolio:nth-of-type(3n+0) {  margin-right:0; }
-
-
 }
