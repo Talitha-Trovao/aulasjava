@@ -51,7 +51,7 @@ h2{ font-family: Helvetica, sans-serif;
   }
 
   .home img{border-radius: 50%;
-    width: 5%;
-    height: 5%;
-    position: relative;
+    width: 2%;
+    height: 2%;
+    display: inline-block;
   }
