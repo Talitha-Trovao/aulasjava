@@ -4,44 +4,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/styles/global.css">
-    <link rel="stylesheet" href="./assets/styles/index.css">
-
-    <title>Talitha Trovão</title>
-    <!-- index -->
+    <link rel="stylesheet" href="./assets/script/index.js">
+    <link rel="stylesheet" href="./assets/style/index.css">
+    <title>Lista tarefas</title>
 </head>
-
+<br/>
 <body>
-    <br/>
-    <section>
-        <div class="profile">
-            <img class="profile"
-            src="./assets/styles/img/perfil.jpg" height="15%" width="15%"
-            alt="profile">
-            <br/>
-            <h1 class="profile">Talitha Trovão Vaz</h1>
-            <h2 class="profile">Analista de Produtos @ Rede</h2>
-        </div>
-    </section>
-    <br/>
-    <hr>
-    <br/>
-    <section>
-        <div class="portfolio">
-            <div class="portfolio_hover"></div>
-            <a href="./works.html"><h1 class="title">Experiência Profissional</h1></a>        
-            <img src="./assets/styles/img/experiencia.jpg">
-        </div>
-        <div class="portfolio">
-            <div class="portfolio_hover"></div>
-            <a href="./Certifications.html"><h1 class="title">Certificações</h1></a>
-            <img src="./assets/styles/img/badge.jpg">
-        </div>
-        <div class="portfolio">
-            <div class="portfolio_hover"></div>
-            <a href="./contact.html"><h1 class="title">Contatos</h1></a>
-            <img src="./assets/styles/img/contatos.png">
-        </div>
-    </section>
-</body> 
+    <div>
+        <h1> To Do list</h1>
+    </div>
+    <div class="content">
+        <section>            <!-- formulario -->
+            <form id="form-create-task">
+                <div>
+                    <label for="title">Tarefa</label>
+                    <input type="text" 
+                    id="title" 
+                    placeholder="titulo da tarefa"
+                    required/> <!-- exige que o campo seja preenchido -->
+
+                </div>
+                <br/>
+                <div>
+                    <label for="description">Descrição da tarefa</label>
+                    <textarea id="description" 
+                    rows="1" 
+                    maxlength="100" 
+                    required 
+                    placeholder="Descrição da tarefa">
+                    </textarea>
+                </div>
+                <br/>
+                <div>
+                    <button type="submit">Registrar</button>
+                </div>
+
+            </form>
+
+        </section>
+        <section>            <!-- tabela -->
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Tarefa</th>
+                        <th>Descrição</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody-tasks">   
+                                    <!-- preenchido com js -->
+                </tbody >
+            </table>
+        </section>
+        <section>
+            <!-- filtro -->
+
+        </section>
+
+    </div>
+
+
+    <!-- carregar o js no final do body para que nao de problema -->
+    <script src="./assets/script/index.js">
+    </script>
+</body>
 </html>
