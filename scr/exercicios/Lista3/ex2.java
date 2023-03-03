@@ -1,4 +1,4 @@
-package io.github.jiangdequan;
+package Lista3;
 
 public class ex2 {
     
