@@ -1,4 +1,5 @@
-package Orientacaoobjetos;
+package Orientacaoobjetos.OO_Ex1;
+// aqui se define as classes e atributos. não há retorno para o usuário.
 public class Carro {
     //dados de estado da classe carro
     String modelo;
