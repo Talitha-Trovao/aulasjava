@@ -1,5 +1,5 @@
-package io.github.jiangdequan;
+package Orientacaoobjetos.OO_Ex2;
 
-public class Invoise_acoes {
+public class Invoice_acoes {
     
 }
