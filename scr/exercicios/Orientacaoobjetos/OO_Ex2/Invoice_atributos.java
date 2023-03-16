@@ -18,14 +18,16 @@ package Orientacaoobjetos.OO_Ex2;
 import javax.lang.model.util.AbstractAnnotationValueVisitor14;
 
 public class Invoice_atributos {
-    int item;
-    String descricaoitem;
-    int qte_item;
-    double valor_item;
-    double valor_total;
+    private int item;
+    private String descricaoitem;
+    private int qte_item;
+    private double valor_item;
+    private double valor_total;
     
-    public void invoice(String[] args) {
-        private void numero_item(qte_item) {
+    
+    public invoice( int item, String descricaoitem, int qte_item, double valor_item, double valor_total) {
+        
+        public void numero_item(qte_item) {
             if(qtde_item = 0){
                 this.valor_item = 0;
                 this.descricaoitem = "Não se aplica.";
@@ -38,10 +40,10 @@ public class Invoice_atributos {
             }
                         
         }
-        private void getInvoiceAmount(qte_item) {
+        public void getInvoiceAmount(qte_item) {
             if(qte_item > 1){
                 this.valor_total = valor_item * qte_item;
-AbstractAnnotationValueViitor14
+
             }
             
         }
