@@ -12,7 +12,6 @@
 // um double. Escreva um aplicativo de teste que demonstra as capacidades da classe invoice.
 
 
-
 package Orientacaoobjetos.OO_Ex2;
 
 import javax.lang.model.util.AbstractAnnotationValueVisitor14;
@@ -26,9 +25,10 @@ public class Invoice_atributos {
     
     
     public invoice( int item, String descricaoitem, int qte_item, double valor_item, double valor_total) {
+        this.item = item;
+        this.descricaoitem = descricaoitem;
         
-        public void numero_item(qte_item) {
-            if(qtde_item = 0){
+            if(qtde_item <= 0){
                 this.valor_item = 0;
                 this.descricaoitem = "Não se aplica.";
                 this.item = 0;
@@ -40,14 +40,44 @@ public class Invoice_atributos {
             }
                         
         }
-        public void getInvoiceAmount(qte_item) {
-            if(qte_item > 1){
-                this.valor_total = valor_item * qte_item;
 
-            }
-            
+        public int getItem() {
+            return item;
         }
         
-    }
+        public void setItem(int item) {
+            this.item = item;
+        }
+        
+        public String getDescricaoItem() {
+            return descricaoitem;
+        }
+        
+        public void setDescricaoItem(String descricaoitem) {
+            this.descricaoitem = descricaoitem;
+        }
+        
+        public int getQtdeItem() {
+            return qtde_item;
+        }
+        
+        public void getQtdeItem(int qtde_item) {
+            this.qtde_item = qtde_item;
+        }
+        
+        public double getvalor_item() {
+            return valor_item;
+        }
+        
+        public void setvalor_item(double valor_item) {
+            this.valor_item = valor_item;
+        }
+        
+        public double getInvoiceAmount(){
+        
+            return getqtde_item() * getPrecoUnitarioItem();
+        }
+           
+        }
+        
     
-}
