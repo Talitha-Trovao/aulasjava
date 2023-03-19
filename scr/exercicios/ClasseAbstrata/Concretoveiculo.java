@@ -18,8 +18,9 @@ public class Concretoveiculo {
 //acelerando aviao
         System.out.println("aviao velocidade: "+ aviao.getVel());
         aviao.acelerar();
+        aviao.acelerar();
+        aviao.acelerar();
         System.out.println("aviao velocidade: "+ aviao.getVel());
-
 
     }
     

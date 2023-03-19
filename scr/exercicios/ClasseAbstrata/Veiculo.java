@@ -14,7 +14,7 @@ public abstract class Veiculo {
     }
 
     public void viewStatus(){
-        System.out.println("status "+ isStatus()));
+        System.out.println("status "+ isStatus());
     }
     public abstract void acelerar();
 
